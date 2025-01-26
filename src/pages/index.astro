@@ -1,11 +1,17 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<h2>Hi There! I am Bagas Aryo</h2>
+	<p>Here are some of my portfolio</p>
+	<section class="project">
+		<Card title='Disaster News Website' description='Simple Disaster News with ExpressJS for Backend side, using ReactJS for Frontend Side and MongoDB for Database' link='https://github.com/BagasAryo/bencana-klien-api.git'/>
+		<Card title='E-commerse Website Based' description='Simple E-commerse Website with php and MySQL for the database' link='https://github.com/BagasAryo/Assignment.git'/>
+	</section>
 </Layout>
